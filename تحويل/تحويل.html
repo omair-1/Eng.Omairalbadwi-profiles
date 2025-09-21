@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحويل الدائره الى مستطيل</title>
+    <style>
+        .shape{
+            width: 100px;
+            height: 100px;
+            background-color: lightpink;
+            border-radius: 50%;
+            transition: all 0.5s ease;
+            margin: 50px;
+        }
+        .shape:hover{
+            width: 150px;
+            height: 100px;
+            border-radius: 0%; /*مستطيل*/
+            background-color: lightpink;
+        }
+        
+        .shape:hover{
+            width: 0;
+            height: 0;
+            border-radius: 5s; /* مثلث*/
+            background-color: transparent;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="shape"></div>
+</body>
+</html>

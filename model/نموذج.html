@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head >
+        <META charset="UTF-8"/>
+        <title>نموذج</title>
+    </head>
+    <body bgcolor="lightyellow">
+         <h2 >تسجيل الدخول </h2>
+         <form action="script.php" method="post">
+            <fieldset>
+            <div>
+                <label>الاسم الاول</label>
+                <input type="first_name" placeholder="الاسم الاول">
+
+                <label >اللقب</label>
+                <input type="last_name" placeholder="اللقب"><br><br>
+            </div>
+            <div>
+                <label>العنوان</label><br>
+                <input type="text" placeholder="إب-الظهار">
+
+                <label>اكتب كلمة المرور</label>
+                <input type="password" placeholder="اكتب كلمة المرور">
+
+                <label>تاكيد  كلمة المرور</label>
+                <input type="password" placeholder="اكتب كلمة المرور"><br><br>
+            </div>
+            <div>
+                <label > الجنس:  </label>
+                <label form="m">ذكر </label> 
+                <input type="radio" name="gender" id="m" value="male" >
+                <label for="f">إنثى</label>
+                <input type="radio" name="gender" id="f" value="female"><br><br>
+            </div>
+            <label>تاريخ الميلاد</label>
+            <input type="datetime-local">
+           <br>
+           <br>
+           <div class="line">
+            <label> تاريخ الميلاد</label>
+            <select>
+                <option>1990</option>
+                <option>2000</option>
+                <option>2010</option>
+            </select>
+            <select>
+                <option>يناير</option>
+                <option>ينويو</option>
+                <option>ديسمبر</option>
+            </select>
+            <select>
+                <option>1</option>
+                <option>5</option>
+                <option>15</option>
+            </select>
+            
+           </div><br>
+           <div>
+                <input type="checkbox">
+                <label> هل انت مسلم</label><br>
+
+                <input type="checkbox">
+                <label> هل تجيد اللغة العربية</label><br>
+
+                <input type="checkbox" >
+                <label> هل تجيد اللغة الإنجليزية</label><br><br>
+            </div>
+            <div>
+                <label>لونك المفضل</label>
+                <input type="color" name="color">
+
+                <label>تحميل صورة شخصية </label>
+                <input type="file" name="file" multiple><!--لتتحميل عدة صور نستخدمmuliple -->
+            
+                <input type="submit">
+                <input type="reset">
+            </div>
+            
+        </fieldset>  
+         </form>
+    </body>
+    
+</html>
